@@ -5,7 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name="zuulapigateway",url="localhost:8200")
+@FeignClient(name="zuulapigateway",url="192.168.99.100:8200")
 //@RibbonClient(name="tourprice")
 public interface BookingPriceProxy {
     @GetMapping("/tourprice/{tourname}/")
